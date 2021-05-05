@@ -79,6 +79,34 @@ echo PI.'<br>';
 
 
 
+// String concatenation
+// echo "Students attendance " . " yasir" ." "."Alex" . '<br>'; // Multiple concatenation
+
+// String functions
+
+$string = "    Hello World    asdfsdf sfgd asdfsdf asdfds ";
+// echo "1 - " . strlen($string) . '<br>';
+// echo "2 - " . trim($string) . '<br>';
+// echo $string;
+// echo "3 - " . ltrim($string) . '<br>';
+// echo "4 - " . rtrim($string) . '<br>';
+// echo "5 - " . str_word_count($string) . '<br>';
+// echo "6 - " . strrev($string) . '<br>';
+// echo "7 - " . strtoupper($string) . '<br>';
+// echo "8 - " . strtolower($string) . '<br>';
+// $foruc = "hellow world";
+// echo "9 - " . ucfirst($foruc) . '<br>';
+// $forlc = "Hellow World Asdfsd Aadf Basdfs";
+// echo "10 - " . lcfirst($forlc) . '<br>';
+// $forwords = "              hello world        dsfsad asdfds   ";
+// echo "11 - " . ucwords($forwords) . '<br>';
+// echo "12 - " . strpos($string, 'world') . '<br>'; // Change into world case sensetive
+// echo "12 - " . strpos($string, 'World') . '<br>'; // Change into world case sensetive
+// echo "13 - " . stripos($string, 'world') . '<br>'; //case insensitive 
+// echo "14.1 - " . substr($string, 8) . '<br>';
+// echo "14.2 - " . substr($string, 4, 7) . '<br>'; // upto defined characters
+// echo "15 - " . str_replace('World', 'PHP', $string) . '<br>';
+// echo "16 - " . str_ireplace('World', 'PHP', $string) . '<br>'; // case insensitive
 
 
 ?>
