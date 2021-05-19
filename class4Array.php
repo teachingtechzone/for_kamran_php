@@ -5,13 +5,13 @@
 // // Associative arrays
 // // ============================================
 
-// // Create an associative array
-$person = [
-    'name' => 'Arsalan',
-    'surname' => 'Khan',
-    'age' => 30,
-    'hobbies' => ['Tennis', 'Video Games']
-];
+// // // Create an associative array
+// $person = [
+//     'name' => 'Arsalan',
+//     'surname' => 'Khan',
+//     'age' => 30,
+//     'hobbies' => ['Tennis', 'Video Games']
+// ];
 
 // $person = ["ali" , "Dana" , 23, ["black", "white"]];
 
@@ -81,10 +81,10 @@ $person = [
 
 
 // // and simplified in php 7.4
-// $person['address'] ??= 'Unknown'; // Unexpected error occur during class
+// $person['address'] ??= 'Unknown';
 // echo $person['address'].'<br>';
 
-
+// echo phpinfo(); 
 
 // echo "<pre>";
 // print_r($person);
@@ -99,5 +99,43 @@ $person = [
 // var_dump(array_keys($person));
 // echo '</pre>';
 
+
+
+// // normal for loop
+// $fruits = ["Banana", "Apple", "Orange"];
+// for ($i=0; $i < count($fruits); $i++) { 
+//     echo $fruits[$i];
+// }
+
+
+
+// // foreach
+// $fruits = ["Banana", "Apple", "Orange"];
+
+// foreach ($fruits as $i => $fruit) {
+//     echo $i . ' ' . $fruit . '<br>';
+// }
+
+
+
+// $fruits = ["Banana", "Apple", "Orange"];
+
+// foreach ($fruits as $fruit) {
+//     echo  $fruit . '<br>';
+// }
+
+// // Create an associative array
+$person = [
+    'name' => 'Arsalan',
+    'surname' => 'Khan',
+    'age' => 30,
+    // 'hobbies' => ['Tennis', 'Video Games']
+];
+
+foreach ($person as $key => $value) {
+
+    echo $key . ' ' . $value . '<br>';
+
+}
 
 ?>
