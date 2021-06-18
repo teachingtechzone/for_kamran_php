@@ -40,13 +40,19 @@ A prepared statement is a feature used to execute the same (or similar) SQL stat
 
 ### Binding
 - (for mysqli)
-$stmt = $conn->prepare("INSERT INTO employees (firstname) VALUES (?)");
-$stmt->bind_param("s", $firstname);
+$stmt = $conn->prepare("INSERT INTO employees (firstname, salary ) VALUES (? , ?)");
+$stmt->bind_param("si", $firstname , $salary);
+$firstname = "Yasir";
+$salary = 5000;
+$stmt->execute();
+
 
 - (for pdo)
 $stmt = $conn->prepare("INSERT INTO employees (firstname) VALUES (:firstname)");
 $stmt->bindParam(':firstname', $firstname);
-
+$firstname = "Nehal";
+$stmt->execute();
+  
 1. i - integer
 2. d - double
 3. s - string

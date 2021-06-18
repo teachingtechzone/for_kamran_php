@@ -1,8 +1,9 @@
 <?php
-require_once "config.php";
-// The prepare() / mysqli_prepare() function is used to prepare an SQL statement for execution
-// mysqli_prepare(connection, query) // by procedural
-// $mysqli -> prepare(query) // by oop
+require_once "../class15th_crud/0-config.php";
+
+// // The prepare() / mysqli_prepare() function is used to prepare an SQL statement for execution
+// // mysqli_prepare(connection, query) // by procedural
+// // $mysqli -> prepare(query) // by oop
 // // prepare and bind
 // $stmt = $conn->prepare("INSERT INTO employees (name, salary) VALUES (?, ?)");
 // $stmt->bind_param("si", $name, $salary);

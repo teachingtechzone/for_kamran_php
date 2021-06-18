@@ -1,10 +1,11 @@
 <?php
 
-require_once "config.php";
-// by msqli oop
+require_once "../class15th_crud/0-config.php";
+
+// // by msqli oop
 // $sql = "SELECT * FROM employees";
 // $result = $conn->query($sql);
-
+// // echo print_r($result);
 // if ($result->num_rows > 0) {
 //   // output data of each row
 //   while($row = $result->fetch_assoc()) {
@@ -17,7 +18,7 @@ require_once "config.php";
 
 
 
-// // by mysqli procedural
+// // // by mysqli procedural
 
 
 // $sql = "SELECT * FROM employees";
@@ -34,39 +35,4 @@ require_once "config.php";
 
 // mysqli_close($conn);
 
-
-
-
-// by pdo
-
-$sql = "SELECT * FROM employees";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
- 
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["name"]. "-" . $row["salary"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-
-// // by pdo , put in table
-
-// $sql = "SELECT * FROM employees";
-// $result = $conn->query($sql);
-
-// if ($result->num_rows > 0) {
-//   echo "<table><tr><th>ID</th><th>Name</th></tr>";
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-//     echo "<tr><td>".$row["id"]."</td><td>".$row["name"]." ".$row["salary"]."</td></tr>";
-//   }
-//   echo "</table>";
-// } else {
-//   echo "0 results";
-// }
-// $conn->close();
 ?>

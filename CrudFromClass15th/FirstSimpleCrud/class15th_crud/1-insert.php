@@ -3,7 +3,7 @@ require_once "0-config.php";
 
 // // // By MySqli OOP
 
-// $sql = "INSERT INTO employees (name, alary) VALUES ('ahsan', 500090)";
+// $sql = "INSERT INTO employees (name, salary) VALUES ('ahsan', 500090)";
 
 // echo $conn->query($sql);
 

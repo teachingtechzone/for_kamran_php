@@ -68,7 +68,7 @@
 
 
 
-//PDO (PHP Data Objects)
+// PDO (PHP Data Objects)
 // to read more about PDO 
 
 // // /* Database credentials. Assuming you are running MySQL
@@ -83,6 +83,7 @@ try{
     $conn = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
     // Set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "working fine";
     // Basically, we here are setting the PDO error mode attribute (controls error reporting)
     // to raise a PDOException that tells you what went wrong when it goes wrong.
 } catch(PDOException $e){
