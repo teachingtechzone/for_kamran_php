@@ -47,8 +47,8 @@ require_once "../class15th_crud/0-config.php";
 //     $stmt->bindParam(':salary', $salary);
   
 //     // insert a row
-//     $name = "Kashan";
-//     $salary = 123456;
+//     $name = "Kashif";
+//     $salary = 11111;
 //     $stmt->execute();
   
 //     // insert another row

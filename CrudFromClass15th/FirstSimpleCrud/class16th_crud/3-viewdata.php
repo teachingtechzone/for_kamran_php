@@ -35,4 +35,55 @@ require_once "../class15th_crud/0-config.php";
 
 // mysqli_close($conn);
 
+
+
+
+// by PDO
+$result = $conn-> query("SELECT * FROM employees");
+
+// print_r($result);
+
+// echo "</br>";
+// echo "<pre>";
+// print_r($result->fetch());
+// echo "</pre>";
+
+// echo "<pre>";
+// print_r($result->fetch(PDO::FETCH_ASSOC));
+// echo "</pre>";
+
+// by default fetch() have PDO::FETCH_BOTH means we can access by index or key
+// $myresult1 = $result->fetch();
+// echo "<pre>";
+// print_r($myresult1[1]);
+// echo "</pre>";
+
+// $myresult1 = $result->fetch();
+// echo "<pre>";
+// print_r($myresult1["name"]);
+// echo "</pre>";
+
+
+
+// $myresult1 = $result->fetch(PDO::FETCH_ASSOC);
+// echo "<pre>";
+// print_r($myresult1[0]); // will throw error because we can't access using index
+// echo "</pre>";
+
+// $myresult1 = $result->fetch(PDO::FETCH_ASSOC);
+// echo "<pre>";
+// print_r($myresult1["name"]);
+// echo "</pre>";
+
+
+// echo "<table>";
+// while($row = $result->fetch(PDO::FETCH_ASSOC)) { 	
+//     echo "<tr>";
+//     echo "<td>".$row['id']."</td>";
+//     echo "<td>".$row['name']."</td>";
+//     echo "<td>".$row['salary']."</td>";
+//     echo "</tr>";
+// }
+// echo "</table>";
+
 ?>
