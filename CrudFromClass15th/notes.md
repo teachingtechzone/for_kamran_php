@@ -6,6 +6,13 @@
 - R ead
 - U pdate
 - D elete
+## Create database
+    
+CREATE TABLE employees (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+salary int(30) NOT NULL,
+) 
 
 ## Three ways
 1. Mysqli
@@ -60,5 +67,7 @@ $stmt->execute();
 
 BLOB stands for Binary Large Object that can hold a variable amount of data. It’s used for storing binary data and for the columns of high-capacity binary storage. You can store any file type including PDF documents, MP3 Files and Video Files.
 to learn more about BLOB datatype read this [https://tableplus.com/blog/2019/10/mysql-blob.html]
+
+
 
 ?>
