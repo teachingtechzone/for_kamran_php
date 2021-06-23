@@ -71,8 +71,8 @@
 // PDO (PHP Data Objects)
 // to read more about PDO 
 
-// // /* Database credentials. Assuming you are running MySQL
-// // // server with default setting (user 'root' with no password) */
+// // // /* Database credentials. Assuming you are running MySQL
+// // // // server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
@@ -84,7 +84,7 @@ try{
     // Set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION , PDO::FETCH_ASSOC);
-    echo "working fine";
+    echo "working fine </br>";
     // Basically, we here are setting the PDO error mode attribute (controls error reporting)
     // to raise a PDOException that tells you what went wrong when it goes wrong.
 } catch(PDOException $e){
