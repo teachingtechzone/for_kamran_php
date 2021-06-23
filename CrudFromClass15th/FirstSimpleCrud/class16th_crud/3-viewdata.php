@@ -7,27 +7,30 @@ require_once "../class15th_crud/0-config.php";
 // $result = $conn->query($sql);
 // // echo print_r($result);
 // if ($result->num_rows > 0) {
-//   // output data of each row
+//     // output data of each row
+//     // $row = $result->fetch_assoc();
+//     // echo print_r($row["NAME"]);
 //   while($row = $result->fetch_assoc()) {
-//     echo "id: " . $row["id"]. " - Name: " . $row["name"]. "-" . $row["salary"]. "<br>";
+//     echo "id: " . $row["id"]. " - Name: " . $row["NAME"]. "-" . $row["salary"]. "<br>";
 //   }
-// } else {
+// } 
+// else {
 //   echo "0 results";
 // }
 // $conn->close();
 
 
 
-// // // by mysqli procedural
+// // by mysqli procedural
 
 
 // $sql = "SELECT * FROM employees";
 // $result = mysqli_query($conn, $sql);
-
+// // echo print_r($result);
 // if (mysqli_num_rows($result) > 0) {
 //   // output data of each row
 //   while($row = mysqli_fetch_assoc($result)) {
-//     echo "id: " . $row["id"]. " - Name: " . $row["name"]. "-" . $row["salary"]. "<br>";
+//     echo "id: " . $row["id"]. " - Name: " . $row["NAME"]. "-" . $row["salary"]. "<br>";
 //   }
 // } else {
 //   echo "0 results";
@@ -60,7 +63,7 @@ $result = $conn-> query("SELECT * FROM employees");
 
 // $myresult1 = $result->fetch();
 // echo "<pre>";
-// print_r($myresult1["name"]);
+// print_r($myresult1["NAME"]);
 // echo "</pre>";
 
 
@@ -72,18 +75,18 @@ $result = $conn-> query("SELECT * FROM employees");
 
 // $myresult1 = $result->fetch(PDO::FETCH_ASSOC);
 // echo "<pre>";
-// print_r($myresult1["name"]);
+// print_r($myresult1["NAME"]);
 // echo "</pre>";
 
 
-// echo "<table>";
-// while($row = $result->fetch(PDO::FETCH_ASSOC)) { 	
-//     echo "<tr>";
-//     echo "<td>".$row['id']."</td>";
-//     echo "<td>".$row['name']."</td>";
-//     echo "<td>".$row['salary']."</td>";
-//     echo "</tr>";
-// }
-// echo "</table>";
+echo "<table>";
+while($row = $result->fetch(PDO::FETCH_ASSOC)) { 	
+    echo "<tr>";
+    echo "<td>".$row['id']."</td>";
+    echo "<td>".$row['NAME']."</td>";
+    echo "<td>".$row['salary']."</td>";
+    echo "</tr>";
+}
+echo "</table>";
 
 ?>

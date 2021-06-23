@@ -50,7 +50,7 @@ require_once "0-config.php";
 
 
 
-// By PDO procedural
+// By PDO 
 try {
 
     $sql = "INSERT INTO employees (name, salary) VALUES ('abc', 700)";

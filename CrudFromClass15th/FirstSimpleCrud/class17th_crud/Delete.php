@@ -3,21 +3,21 @@
 require_once "../class15th_crud/0-config.php";
 
 
-// // using mysqli Object Oriented
-$sql = "DELETE FROM employees WHERE id=5";
+// // // using mysqli Object Oriented
+// $sql = "DELETE FROM employees WHERE id=6";
 
-if ($conn->query($sql)) {
-  echo "Record deleted successfully";
-} else {
-  echo "Error deleting record: " . $conn->error;
-}
+// if ($conn->query($sql)) {
+//   echo "Record deleted successfully";
+// } else {
+//   echo "Error deleting record: " . $conn->error;
+// }
 
-$conn->close();
+// $conn->close();
 
 
 
 // // using mysqli Procedural
-// $sql = "DELETE FROM employees WHERE id=3";
+// $sql = "DELETE FROM employees WHERE id=7";
 
 // if (mysqli_query($conn, $sql)) {
 //   echo "Record deleted successfully";
@@ -32,8 +32,7 @@ $conn->close();
 
 // // using pdo
 // try{
-//     $sql = "DELETE FROM employees WHERE id = 2";  
-//     // use exec() because no results are returned
+//     $sql = "DELETE FROM employees WHERE id = 8";  
 //     $conn->exec($sql);
 //     echo "Record(s) were deleted successfully.";
 // } catch(PDOException $e){
@@ -41,4 +40,5 @@ $conn->close();
 // }
  
 // // Close connection
-// unset($conn);
+// unset($conn); //either this
+// // $conn = null; // or this 

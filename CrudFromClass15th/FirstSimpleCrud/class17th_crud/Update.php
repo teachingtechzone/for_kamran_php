@@ -3,7 +3,7 @@ require_once "../class15th_crud/0-config.php";
 
 
 // // MySQLi Object-oriented
-// $sql = "UPDATE employees SET name='Ali' WHERE id=6";
+// $sql = "UPDATE employees SET name='Ali' WHERE id=9";
 
 // if ($conn->query($sql) === TRUE) {
 //   echo "Record updated successfully";
@@ -16,7 +16,7 @@ require_once "../class15th_crud/0-config.php";
 
 // // MySQLi Procedural
 
-// $sql = "UPDATE employees SET name='Bilal' WHERE id=6";
+// $sql = "UPDATE employees SET name='Bilal' WHERE id=9";
 
 // if (mysqli_query($conn, $sql)) {
 //   echo "Record updated successfully";
@@ -28,17 +28,17 @@ require_once "../class15th_crud/0-config.php";
 
 
 
+// Using PDO
+try {
 
-// try {
-
-//     $sql = "UPDATE employees SET name='Kamran' WHERE id=6";
+    $sql = "UPDATE employees SET name='Kamran' WHERE id=9";
   
-//     // execute the query
-//     $conn->exec($sql);
-//     echo " records UPDATED successfully";
+    // execute the query
+    $conn->exec($sql);
+    echo " records UPDATED successfully";
 
-//   } catch(PDOException $e) {
-//     echo $sql . "<br>" . $e->getMessage();
-//   }
+  } catch(PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+  }
   
-//   $conn = null;
+  $conn = null;
